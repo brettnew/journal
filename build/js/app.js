@@ -44,7 +44,7 @@ Entry.prototype.letterCount = function(entry) {
 
 Entry.prototype.getTeaser = function(entry) {
   var index = entry.indexOf(".");
-  var teaser = entry.slice(0, index);
+  var teaser = entry.slice(0, index+1);
   if (teaser.split(" ").length < 8) {
     return teaser;
   } else {
